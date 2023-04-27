@@ -20,14 +20,14 @@
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <th>
+            <th>f
                 @Html.DisplayNameFor(model => model.Description)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in ViewBag.list as List<DetailsModel>) {
+@foreach (DetailsModel item in ViewBag.list ) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
